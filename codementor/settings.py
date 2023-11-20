@@ -75,14 +75,21 @@ WSGI_APPLICATION = 'codementor.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'e16dGD4e4GC23gE2Daa143AdfC*aG*A-',
+#         'HOST': 'monorail.proxy.rlwy.net',
+#         'PORT': '58688',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'e16dGD4e4GC23gE2Daa143AdfC*aG*A-',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '58688',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
